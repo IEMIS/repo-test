@@ -1,0 +1,12 @@
+table{
+    display: flexbox
+},
+table thead{
+    justify-items: center;
+    justify-content: space-around;
+}
+table thead th{
+    background-color: blue;
+    color: white;
+    padding: 20;
+}
