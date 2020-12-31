@@ -54,14 +54,12 @@ export default class signin extends Component{
     render() {
 
     const { email, password, message,error} =this.state;
-    //console.log(JSON.stringify({names, classes, address}))
     return ( 
         <div id="styleup">
         <h1 class="head">Welcome Please Sign in </h1>
             <h3>{message}</h3>
-            <h3>{error}</h3>
             <fieldset>
-               <legend>Registered User</legend>
+               <legend>Registered Users</legend>
                 <p><label class="title">Email:</label><input type="input" value={email} placeholder =" your email" onChange={this.handleChange('email')} /> <br/>
                 <label class="title">Password:</label><input type="password" value={password} placeholder ="passowrd" onChange={this.handleChange('password')} /></p>
                  <input type="submit" onClick={this.handleSubmit} value ="sign in" />  
